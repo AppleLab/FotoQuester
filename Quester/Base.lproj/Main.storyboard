@@ -37,16 +37,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DiD-rW-3Qh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DiD-rW-3Qh">
                                 <rect key="frame" x="0.0" y="102" width="320" height="336"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="OZj-if-jgd">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="OZj-if-jgd">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OZj-if-jgd" id="aJb-Nt-Rsm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -60,6 +60,7 @@
                                 <rect key="frame" x="20" y="8" width="280" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -143,7 +144,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-8s-TCG">
                                 <rect key="frame" x="101" y="71" width="119" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send to email" image="14C24E31-620C-4028-A6F0-768288203FBB">
+                                <state key="normal" title="Send to email" image="1_52552c254e94b52552c254e98a.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -153,7 +154,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iv-z6-9aL">
                                 <rect key="frame" x="49" y="319" width="222" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook" image="C160023A-4687-4D7E-8F78-E5555743EEAA">
+                                <state key="normal" title="Facebook" image="faceb.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -163,7 +164,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhU-yf-qUZ">
                                 <rect key="frame" x="98" y="197" width="124" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Twitter" image="37E7CCC5-1690-422C-AFD6-63B3CDFAE4F3">
+                                <state key="normal" title="Twitter" image="Twitter1.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -179,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="314" y="2348"/>
         </scene>
-        <!--View Controller-->
+        <!--Class Achivmients-->
         <scene sceneID="cUE-xX-uud">
             <objects>
-                <viewController id="T5B-Ni-9n0" sceneMemberID="viewController">
+                <viewController id="T5B-Ni-9n0" customClass="ClassAchivmients" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dhc-04-FEt"/>
                         <viewControllerLayoutGuide type="bottom" id="cor-XR-7JZ"/>
@@ -269,20 +270,20 @@
         <scene sceneID="T6V-bX-6Hp">
             <objects>
                 <tableViewController id="YT9-Zo-oFJ" customClass="ClassFeed" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="389" sectionHeaderHeight="22" sectionFooterHeight="22" id="wOr-Nz-Ppm">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="424" sectionHeaderHeight="22" sectionFooterHeight="22" id="wOr-Nz-Ppm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="389" id="omf-KQ-cft" customClass="Likes">
-                                <rect key="frame" x="0.0" y="86" width="320" height="389"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="424" id="omf-KQ-cft" customClass="Likes">
+                                <rect key="frame" x="0.0" y="86" width="320" height="424"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="omf-KQ-cft" id="tSi-IO-lhb">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="388"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="423"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDv-Rw-Chq">
-                                            <rect key="frame" x="20" y="338" width="46" height="30"/>
+                                            <rect key="frame" x="20" y="303" width="47" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <state key="normal" title="Like">
@@ -293,13 +294,40 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGN-2a-mNh">
-                                            <rect key="frame" x="250" y="347" width="41" height="21"/>
+                                            <rect key="frame" x="250" y="308" width="41" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-9Y-k4W">
-                                            <rect key="frame" x="20" y="20" width="280" height="310"/>
+                                            <rect key="frame" x="20" y="20" width="280" height="280"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-4h-BRO">
+                                            <rect key="frame" x="20" y="341" width="280" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-Lb-EA3">
+                                            <rect key="frame" x="264" y="382" width="43" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button" image="right_arrow.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="comment:" destination="omf-KQ-cft" eventType="touchUpInside" id="egV-IK-m02"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="You'r comments..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEH-he-UbY">
+                                            <rect key="frame" x="20" y="385" width="245" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like_200.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZP7-Jg-0t3">
+                                            <rect key="frame" x="272" y="304" width="35" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -307,6 +335,8 @@
                                 <connections>
                                     <outlet property="Likes" destination="RGN-2a-mNh" id="yn6-sV-oRN"/>
                                     <outlet property="foto" destination="bRc-9Y-k4W" id="idw-WY-aTd"/>
+                                    <outlet property="label" destination="0ki-4h-BRO" id="MEi-FU-FNa"/>
+                                    <outlet property="texter" destination="UEH-he-UbY" id="UMI-eK-DGC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -469,7 +499,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgx-cC-VZe">
                                 <rect key="frame" x="83" y="370" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="989DA118-13E1-45CA-B2A5-108CAC797902">
+                                <state key="normal" image="98D71104-D294-4408-AC0B-8E3C74D10A76">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -521,7 +551,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-YM-yZO">
-                                <rect key="frame" x="75" y="454" width="170" height="44"/>
+                                <rect key="frame" x="75" y="366" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Invite Friends">
@@ -530,14 +560,6 @@
                                 <connections>
                                     <segue destination="DAL-qq-1NJ" kind="push" id="Xix-hY-CL1"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFA-ZL-Ele">
-                                <rect key="frame" x="63" y="391" width="194" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Donate">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-gt-mGg">
                                 <rect key="frame" x="83" y="253" width="155" height="62"/>
@@ -589,41 +611,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="14C24E31-620C-4028-A6F0-768288203FBB" width="200" height="229">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPD1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYtMDY5VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWnsyMDAsIDIyOX3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
-GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18Q4GZpbGU6Ly9sb2NhbGhv
-c3QvQXBwbGljYXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9EZXZlbG9wZXIvUGxhdGZvcm1zL2lQaG9u
-ZVNpbXVsYXRvci5wbGF0Zm9ybS9EZXZlbG9wZXIvTGlicmFyeS9YY29kZS9Qcml2YXRlUGx1Z0lucy9J
-REVJbnRlcmZhY2VCdWlsZGVyQ29jb2FUb3VjaEludGVncmF0aW9uLmlkZXBsdWdpbi9Db250ZW50cy9S
-ZXNvdXJjZXMvSUJVSU1pc3NpbmdJbWFnZS50aWZm0icoKSpaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VS
-TKIrLFVOU1VSTFhOU09iamVjdNInKC4vV05TQXJyYXmiLizTMTIKMzQ1V05TV2hpdGVcTlNDb2xvclNw
-YWNlRDAgMAAQA4AL0icoNzhXTlNDb2xvcqI3LNInKDo7V05TSW1hZ2WiOixfEA9OU0tleWVkQXJjaGl2
-ZXLRPj9Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJAIsAjQCYAJ0AqACq
-AKwArgCzALYAuAC6ALwAvgDFAM0A2QDbAN0A3wHCAccB0gHbAeEB5AHqAfMB+AIAAgMCCgISAh8CJAIm
-AigCLQI1AjgCPQJFAkgCWgJdAmIAAAAAAAACAQAAAAAAAABAAAAAAAAAAAAAAAAAAAACZA
-</mutableData>
-        </image>
-        <image name="37E7CCC5-1690-422C-AFD6-63B3CDFAE4F3" width="300" height="284">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPD1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYtMDY5VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWnszMDAsIDI4NH3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
-GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18Q4GZpbGU6Ly9sb2NhbGhv
-c3QvQXBwbGljYXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9EZXZlbG9wZXIvUGxhdGZvcm1zL2lQaG9u
-ZVNpbXVsYXRvci5wbGF0Zm9ybS9EZXZlbG9wZXIvTGlicmFyeS9YY29kZS9Qcml2YXRlUGx1Z0lucy9J
-REVJbnRlcmZhY2VCdWlsZGVyQ29jb2FUb3VjaEludGVncmF0aW9uLmlkZXBsdWdpbi9Db250ZW50cy9S
-ZXNvdXJjZXMvSUJVSU1pc3NpbmdJbWFnZS50aWZm0icoKSpaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VS
-TKIrLFVOU1VSTFhOU09iamVjdNInKC4vV05TQXJyYXmiLizTMTIKMzQ1V05TV2hpdGVcTlNDb2xvclNw
-YWNlRDAgMAAQA4AL0icoNzhXTlNDb2xvcqI3LNInKDo7V05TSW1hZ2WiOixfEA9OU0tleWVkQXJjaGl2
-ZXLRPj9Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJAIsAjQCYAJ0AqACq
-AKwArgCzALYAuAC6ALwAvgDFAM0A2QDbAN0A3wHCAccB0gHbAeEB5AHqAfMB+AIAAgMCCgISAh8CJAIm
-AigCLQI1AjgCPQJFAkgCWgJdAmIAAAAAAAACAQAAAAAAAABAAAAAAAAAAAAAAAAAAAACZA
-</mutableData>
-        </image>
-        <image name="989DA118-13E1-45CA-B2A5-108CAC797902" width="300" height="300">
+        <image name="1_52552c254e94b52552c254e98a.jpg" width="200" height="229"/>
+        <image name="98D71104-D294-4408-AC0B-8E3C74D10A76" width="300" height="300">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPD1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYtMDY5VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -640,24 +629,11 @@ AKwArgCzALYAuAC6ALwAvgDFAM0A2QDbAN0A3wHCAccB0gHbAeEB5AHqAfMB+AIAAgMCCgISAh8CJAIm
 AigCLQI1AjgCPQJFAkgCWgJdAmIAAAAAAAACAQAAAAAAAABAAAAAAAAAAAAAAAAAAAACZA
 </mutableData>
         </image>
-        <image name="C160023A-4687-4D7E-8F78-E5555743EEAA" width="300" height="190">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPD1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYtMDY5VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWnszMDAsIDE5MH3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
-GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18Q4GZpbGU6Ly9sb2NhbGhv
-c3QvQXBwbGljYXRpb25zL1hjb2RlLmFwcC9Db250ZW50cy9EZXZlbG9wZXIvUGxhdGZvcm1zL2lQaG9u
-ZVNpbXVsYXRvci5wbGF0Zm9ybS9EZXZlbG9wZXIvTGlicmFyeS9YY29kZS9Qcml2YXRlUGx1Z0lucy9J
-REVJbnRlcmZhY2VCdWlsZGVyQ29jb2FUb3VjaEludGVncmF0aW9uLmlkZXBsdWdpbi9Db250ZW50cy9S
-ZXNvdXJjZXMvSUJVSU1pc3NpbmdJbWFnZS50aWZm0icoKSpaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VS
-TKIrLFVOU1VSTFhOU09iamVjdNInKC4vV05TQXJyYXmiLizTMTIKMzQ1V05TV2hpdGVcTlNDb2xvclNw
-YWNlRDAgMAAQA4AL0icoNzhXTlNDb2xvcqI3LNInKDo7V05TSW1hZ2WiOixfEA9OU0tleWVkQXJjaGl2
-ZXLRPj9Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJAIsAjQCYAJ0AqACq
-AKwArgCzALYAuAC6ALwAvgDFAM0A2QDbAN0A3wHCAccB0gHbAeEB5AHqAfMB+AIAAgMCCgISAh8CJAIm
-AigCLQI1AjgCPQJFAkgCWgJdAmIAAAAAAAACAQAAAAAAAABAAAAAAAAAAAAAAAAAAAACZA
-</mutableData>
-        </image>
+        <image name="Twitter1.jpg" width="300" height="284"/>
         <image name="VK.jpg" width="300" height="300"/>
+        <image name="faceb.jpg" width="300" height="190"/>
+        <image name="like_200.png" width="200" height="183"/>
+        <image name="right_arrow.png" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

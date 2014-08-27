@@ -12,7 +12,10 @@
     int x;
 }
 - (IBAction)Like:(id)sender;
+- (IBAction)comment:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *foto;
+@property (weak, nonatomic) IBOutlet UITextField *texter;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @property (weak, nonatomic) IBOutlet UILabel *Likes;
 @end

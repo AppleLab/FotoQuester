@@ -36,4 +36,10 @@
     NSString *str = [NSString stringWithFormat:@"%d", (int)x];
     [self.Likes setText:str];
 }
+
+- (IBAction)comment:(id)sender {
+    [self.label setText:self.texter.text];
+    self.label.numberOfLines = 0;
+    [self.label sizeToFit];
+}
 @end
