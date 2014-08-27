@@ -79,14 +79,14 @@
 //    mc2.arrPlace = self.place;
 //    
 //    
-//    NSUserDefaults *def = [[NSUserDefaults alloc] init];
-//    
-//    NSString *str = [self.tf_login text];
-//    NSString *password = [self.tf_password text];
-//    
-//    [def setValue:str forKey:@"login"];
-//    [def setValue:password forKey:@"password"];
-//    
+    NSUserDefaults *def = [[NSUserDefaults alloc] init];
+    
+    NSString *str = [self.tf_login text];
+    NSString *password = [self.tf_password text];
+    
+    [def setValue:str forKey:@"login"];
+    [def setValue:password forKey:@"password"];
+//
     
     
     // Get the new view controller using [segue destinationViewController].

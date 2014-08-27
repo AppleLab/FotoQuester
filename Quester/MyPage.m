@@ -30,12 +30,13 @@
 {
     [super viewDidLoad];
     def = [[NSUserDefaults alloc] init];
-    if([def objectForKey:@"username"] !=nil){
+   /* if([def objectForKey:@"username"] !=nil){
         [self.tf_username setText:[def objectForKey:@"username"]];
     }else{
         [self.tf_username setText:[def objectForKey:@"login"]];
-    }
-    
+    }*/
+    [self.lbl_login setText:[def objectForKey:@"login"]];
+    NSLog(@"log %@",[def objectForKey:@"login"]);
     if([def objectForKey:@"avatar"] != nil){
         UIImage *image = [[UIImage alloc] init];
         

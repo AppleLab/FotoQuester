@@ -56,7 +56,7 @@
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self->photo setImage:image];
     
-    [[Singleton sharedInstance].arrFoto addObject:image];
+    [[Singleton sharedInstance].arrFoto insertObject:image atIndex:0];
     NSLog(@"Count of photos (Photoscreen) %d",[Singleton sharedInstance].arrFoto.count);
     [self dismissViewControllerAnimated:YES completion:nil];
     
